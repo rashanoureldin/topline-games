@@ -1,0 +1,683 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@font-face {
+    font-family: "JF Flat Regular";
+    src: url('../fonts/JF-Flat-regular.eot');
+    src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+    url('../fonts/JF-Flat-regular.woff') format('woff'),
+    url('../fonts/JF-Flat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------------
+        Bootstrap Hack       
+ ------------------------*/
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: right;
+}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: right;
+  }
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: right;
+  }
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: right;
+  }
+  .col-md-offset-12 {
+    margin-right: 100%;
+  }
+  .col-md-offset-11 {
+    margin-right: 91.66666667%;
+  }
+  .col-md-offset-10 {
+    margin-right: 83.33333333%;
+  }
+  .col-md-offset-9 {
+    margin-right: 75%;
+  }
+  .col-md-offset-8 {
+    margin-right: 66.66666667%;
+  }
+  .col-md-offset-7 {
+    margin-right: 58.33333333%;
+  }
+  .col-md-offset-6 {
+    margin-right: 50%;
+  }
+  .col-md-offset-5 {
+    margin-right: 41.66666667%;
+  }
+  .col-md-offset-4 {
+    margin-right: 33.33333333%;
+  }
+  .col-md-offset-3 {
+    margin-right: 25%;
+  }
+  .col-md-offset-2 {
+    margin-right: 16.66666667%;
+  }
+  .col-md-offset-1 {
+    margin-right: 8.33333333%;
+  }
+  .col-md-offset-0 {
+    margin-right: 0;
+  }
+   .row-centered {
+    text-align:center;
+}
+  .col-centered {
+      display:inline-block;
+      float:none;
+      /* reset the text-align */
+      text-align:right;
+      /* inline-block space fix */
+      margin-right:-4px;
+  }
+/*----------------------------- 
+            FIXED NAV
+------------------------------*/
+.single-server .prosubheader{
+  background-color: #444444;
+  border: 0px;
+  border-radius: 0px;
+  z-index: 9999;
+  margin-bottom: 0px;
+}
+.single-server .prosubheader .nav>li{
+  border-right: 2px solid #555555;
+}
+.single-server .prosubheader .nav>li:first-child{
+  border-right: none;
+}
+.single-server .prosubheader .nav>li>a{
+  padding: 25px 15px;
+  color: #fff;
+  font-family: "JF Flat Regular";
+}
+.single-server .prosubheader .nav>li>a>i{
+  margin-bottom: 12px;
+}
+.single-server .prosubheader .nav>li>a:hover , .single-server .prosubheader .nav>li>a:active , .single-server .prosubheader .nav>li>a:focus{
+  background-color: #525252;
+}
+
+.affix {
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.single-server .prosubheader.singlered{
+  background-color: #f04e4d;
+}
+.single-server .prosubheader.singlered .nav>li{
+  border-right: 2px solid #f15e5e;
+}
+.single-server .prosubheader.singlered .nav>li>a:hover , .single-server .prosubheader.singlered .nav>li>a:active , .single-server .prosubheader.singlered .nav>li>a:focus{
+  background-color: #ff5252;
+}
+.single-server .prosubheader.singlered .nav>li:first-child{
+  border-right: none;
+}
+
+.single-server .prosubheader.singleblue{
+  background-color:#2f949c;
+}
+.single-server .prosubheader.singleblue .nav>li{
+  border-right: 2px solid #429ea5;
+}
+.single-server .prosubheader.singleblue .nav>li>a:hover , .single-server .prosubheader.singleblue .nav>li>a:active , .single-server .prosubheader.singleblue .nav>li>a:focus{
+  background-color:#34a5ad;
+}
+.single-server .prosubheader.singleblue .nav>li:first-child{
+  border-right: none;
+}
+
+/*------------------------
+		Big Banner       
+ ------------------------*/
+ .single-banner{
+  position: relative;
+  background-image: url(../images/patternbg.png);
+  background-repeat:repeat;
+  background-position: 0 0;
+  padding-top: 70px;
+  width: 100%;
+ }
+ .soldwrap{
+ }
+ .bcontent{
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 216px;
+  text-align: center;
+ }
+ .bcontent span{
+  display: block;
+  font-size: 30px;
+  font-family: "JF Flat Regular";
+  line-height: 32px;
+  margin-bottom: 29px;
+ }
+  .bcontent img{
+    display: block;
+    margin: 0 auto;
+  }
+  .bcontent a{
+    margin-top: 44px;
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #7b7ab7;
+    color: #7b7ab7;
+    font-size: 15px;
+    font-family: 'Droid Arabic Kufi';
+    padding: 18px 50px;
+  }
+  .bcontent a:hover{
+    text-decoration: none;
+    background-color: #7b7ab7;
+    color: #fff;
+    border-color: #fff;
+  }
+    .bcontent a i{
+      margin-right: 10px;
+    }
+/*----------------------------- 
+            game info
+------------------------------*/  
+ .game-info{
+  position: relative;
+ }
+  .imgbg{
+    background-image: url(../images/game-infobg.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .imgbg.triva{
+  background-image: url(../images/trivabg.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .imgbg.sanabg{
+  background-image: url(../images/sanabg.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .colorbg{
+    background-color: #7b7ab7;
+ }
+ .colorbg.singlered{
+  background-color: #f04e4d;
+ }
+ .colorbg.singleblue{
+  background-color: #2f949c;
+ }
+ .game-info .imgbg , .game-info .colorbg{
+  padding-top: 132px;
+  padding-bottom: 122px;
+  height: 610px;
+ }
+ .game-info .imgbg{
+ }
+ .game-info .colorbg{
+  color: #fff;
+ }
+ .game-info .colorbg p{
+    font-family: 'Droid Arabic Kufi';
+    font-size: 10px;
+    line-height: 28px;
+    margin-bottom: 40px;
+ }
+ .game-info .colorbg h5{
+  color: #fff;
+  font-family: 'Droid Arabic Kufi';
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 38px;
+ }
+ .game-info .colorbg h5 i{
+  margin-left: 10px;
+ }
+ /*------------------------
+        Server specifications       
+ ------------------------*/
+ .serverspec{
+  position: relative;
+  padding-top: 77px;
+  padding-bottom: 33px;
+ }
+  .server-heading{
+    margin-bottom: 77px;
+  }
+  .heading-content{
+    width: 380px;
+    margin: 0 auto;
+  }
+ .server-heading h2 , .server-heading span{
+    font-family: "JF Flat Regular";
+    line-height: 28px;
+    display: block;
+    margin-right: 68px;
+ }
+ .server-heading h2{
+    font-size: 34px;
+    color: #7b7ab7;
+    margin-bottom: 14px;
+ }
+ .server-heading span{
+    font-size: 19px;
+    color: #b1b1b1;
+ }
+ .head-icon{
+  width: 72px;
+  height: 61px;
+  position: relative;
+ }
+
+ .head-icon a{
+    display: block;
+    position: absolute;
+    top: 22%;
+    right: 22%;
+ }
+  .head-icon a i{
+    font-size: 36px;
+    color: #7b7ab7;
+  }
+ .server-box{
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 44px;
+    margin-bottom: 56px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+ }
+ .server-box:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid #fff;
+    background-color: #fff;
+ }
+ .server-box .serv-icon{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+ }
+ .sprite {
+    background-image: url(../images/serverspec.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bookmark {
+    width: 60px;
+    height: 60px;
+    background-position: -6px -6px;
+}
+
+.sprite-follow {
+    width: 64px;
+    height: 64px;
+    background-position: -78px -6px;
+}
+
+.sprite-map {
+    width: 56px;
+    height: 56px;
+    background-position: -154px -6px;
+}
+
+.sprite-price {
+    width: 57px;
+    height: 57px;
+    background-position: -222px -6px;
+}
+
+.sprite-rocket {
+    width: 58px;
+    height: 58px;
+    background-position: -291px -6px;
+}
+
+.sprite-support {
+    width: 52px;
+    height: 59px;
+    background-position: -361px -6px;
+}
+.server-box span{
+    display: block;
+    font-size: 21px;
+    color: #434343;
+    line-height: 28px;
+    font-family: "JF Flat Regular";
+}
+.server-box p{
+    margin-top: 20px;
+    font-size: 13px;
+    color: #929292;
+    font-family: 'Droid Arabic Naskh';
+    line-height: 28px;
+}
+/*------------------------
+        Plans       
+ ------------------------*/
+ .plans{
+  background-image: url(../images/patternbg.png);
+  background-repeat:repeat;
+  background-position: 0 0;
+  padding-bottom: 45px;
+ }
+ .plans-heading{
+  margin-top: 90px;
+  margin-bottom: 88px;
+ }
+ .plans-heading .head-icon{
+     width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+ 
+  .plans-heading .head-icon a{
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+   .plans-heading .head-icon a i{
+    font-size: 70px;
+    color: #fcb435;
+    transform: rotate(-35deg) ;
+    -webkit-transform: rotate(-35deg) ;
+    -moz-transform: rotate(-35deg) ;
+    -o-transform: rotate(-35deg) ;
+    -ms-transform: rotate(-35deg) ;
+
+  }
+ .plans-heading h2 , .plans-heading span{
+    font-family: "JF Flat Regular";
+    display: block;
+    margin-right: 80px;
+ }
+ .plans-heading h2{
+    color: #2f949c;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 10px;
+ }
+ .plans-heading span{
+    color: #a0a0a0;
+    font-size: 25px;
+ }
+ .plans-box{
+   background-color: #fff;
+   border-radius: 10px;
+   width: 500px;
+   margin: 0 auto;
+   margin-bottom: 65px;
+   padding: 30px 0;
+   font-family: "JF Flat Regular";
+   -webkit-box-shadow: 3px 4px 21px 0px rgba(0, 0, 0, 0.11);
+   -moz-box-shadow: 3px 4px 21px 0px rgba(0, 0, 0, 0.11);
+   box-shadow: 3px 4px 21px 0px rgba(0, 0, 0, 0.11);
+ }
+.priceswrap{
+    text-align: center;
+}
+.priceswrap p{
+  color: #424242;
+  font-size: 22px;
+  line-height: 46px;
+  margin-bottom: 36px;
+}
+.priceswrap p span{
+  color: #f03e49;
+  font-size: 45px;
+  line-height: 46px;
+}
+.priceswrap.priceblue p span{
+  color: #2d929a;
+}
+.plan-list{
+  width: 100%;
+  display: block;
+  padding: 0 30px;
+}
+.plan-list li{
+  display: block;
+  background-color: #ededed;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 17px;
+  font-size: 15px;
+  line-height: 38px;
+  padding: 0 40px;
+}
+.spleft , .spright{
+  display: inline-block;
+  width: 50%;
+}
+.buybtn{
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 35px;
+  margin-top: 49px;
+  margin-bottom: 3px;
+}
+.buybtn a{
+  font-size: 18px;
+  color: #66c073;
+  border: 2px solid #66c073;
+  border-radius: 30px;
+  display: block;
+  padding: 12px 35px;
+}
+.buybtn a i{
+  color: #66c073;
+    margin-left: 13px;
+}
+.buybtn:hover a{
+  text-decoration: none;
+  background-color: #66c073;
+  color: #fff;
+
+}
+.buybtn:hover a i{
+  color: #fff;
+}
+.listgreen{
+  color: #18a02c;
+}
+.listred{
+  color: #e0435a;
+}
+.listmova{
+  color: #555491;
+}
+/*ASA START #1AA568*/
+.plan-head{
+    font-size: 16px !important;
+    width: 103.2%;
+    position: relative;
+    background: #7b7ab7;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em; /* Adjust to suit */
+    margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.plan-head:before, .plan-head:after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+}
+.plan-head:before {
+    left: -2em;
+    bottom: -1em;
+    border: 1.5em solid #7b7ab7;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+.plan-head:after {
+    right: -1.5em;
+    top: 0;
+    border: 1.5em solid #7b7ab7;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+.plan-head h3:before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #555491 transparent transparent transparent;
+    bottom: -1em;
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+.plan-head-container { position: relative; z-index: 1; }
+/*ASA END*/
+.plansinglered.plan-head{
+    font-size: 16px !important;
+    width: 103.2%;
+    position: relative;
+    background: #f04e4d;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em; /* Adjust to suit */
+    margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.plansinglered.plan-head:before, .plansinglered.plan-head:after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+}
+.plansinglered.plan-head:before {
+    left: -2em;
+    bottom: -1em;
+    border: 1.5em solid #f04e4d;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+.plansinglered.plan-head:after {
+    right: -1.5em;
+    top: 0;
+    border: 1.5em solid #f04e4d;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+.plansinglered.plan-head h3:before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #be1c1b transparent transparent transparent;
+    bottom: -1em;
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+
+.plansingleblue.plan-head{
+    font-size: 16px !important;
+    width: 103.2%;
+    position: relative;
+    background: #2f949c;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em; /* Adjust to suit */
+    margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.plansingleblue.plan-head:before, .plansingleblue.plan-head:after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+}
+.plansingleblue.plan-head:before {
+    left: -2em;
+    bottom: -1em;
+    border: 1.5em solid #2f949c;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+.plansingleblue.plan-head:after {
+    right: -1.5em;
+    top: 0;
+    border: 1.5em solid #2f949c;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+.plansingleblue.plan-head h3:before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #046971 transparent transparent transparent;
+    bottom: -1em;
+    left: 0;
+    border-width: 1em 0 0 1em;
+}

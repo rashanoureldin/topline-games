@@ -1,0 +1,534 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@font-face {
+    font-family: "JF Flat Regular";
+    src: url('../fonts/JF-Flat-regular.eot');
+    src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+    url('../fonts/JF-Flat-regular.woff') format('woff'),
+    url('../fonts/JF-Flat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------------
+        Bootstrap Hack       
+ ------------------------*/
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: right;
+}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: right;
+  }
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: right;
+  }
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: right;
+  }
+  .col-md-offset-12 {
+    margin-right: 100%;
+  }
+  .col-md-offset-11 {
+    margin-right: 91.66666667%;
+  }
+  .col-md-offset-10 {
+    margin-right: 83.33333333%;
+  }
+  .col-md-offset-9 {
+    margin-right: 75%;
+  }
+  .col-md-offset-8 {
+    margin-right: 66.66666667%;
+  }
+  .col-md-offset-7 {
+    margin-right: 58.33333333%;
+  }
+  .col-md-offset-6 {
+    margin-right: 50%;
+  }
+  .col-md-offset-5 {
+    margin-right: 41.66666667%;
+  }
+  .col-md-offset-4 {
+    margin-right: 33.33333333%;
+  }
+  .col-md-offset-3 {
+    margin-right: 25%;
+  }
+  .col-md-offset-2 {
+    margin-right: 16.66666667%;
+  }
+  .col-md-offset-1 {
+    margin-right: 8.33333333%;
+  }
+  .col-md-offset-0 {
+    margin-right: 0;
+  }
+   .row-centered {
+    text-align:center;
+}
+  .col-centered {
+      display:inline-block;
+      float:none;
+      /* reset the text-align */
+      text-align:right;
+      /* inline-block space fix */
+      margin-right:-4px;
+  }
+/*------------------------
+		Big Banner       
+ ------------------------*/
+ .bigbanner{
+ 	position: relative;
+ 	width: 100%;
+ 	background-image: url(../images/bigbanner.jpg);
+ 	background-repeat: no-repeat;
+    background-position: top right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+ .bannercontentwrap{
+    display: table;
+    width: 510px;
+    height: 605px;
+    margin: 0 auto;
+    text-align: center;
+ }
+ .content-middle{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+ }
+ .content-middle h1, .content-middle span{
+   font-family: "JF Flat Regular";
+   color: #fff;
+   line-height: auto;
+ }
+ .content-middle h1{
+    font-size: 47px;
+   display: block;
+   margin-bottom: 15px;
+ }
+ .content-middle span{
+    font-size: 33px;
+   display: block;
+   margin-bottom: 63px;
+ }
+  .btncircle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    position: relative;
+ }
+.btncircle1{
+    background-color: #fff;
+    margin: 0 auto;
+    width: 54px;
+    height: 54px;
+}
+ .btncircle1 i{
+    position: absolute;
+    top: 39%;
+    right: 39%;
+    color: #595959;
+ }
+
+ /*------------------------
+        Server specifications       
+ ------------------------*/
+ .server-heading{
+    margin-bottom: 100px;
+ }
+ .head-icon{
+    text-align: center;
+    width: 58px;
+    height: 58px;
+    margin-left: 10px;
+ }
+
+ .btncircle2{
+    background-color: #e2303b;
+ }
+ .btncircle2 i{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    color: #fff;
+    font-size: 21px;
+ }
+ .server-heading h2 , .server-heading span{
+    font-family: "JF Flat Regular";
+    line-height: 32px;
+    display: block;
+    margin-right: 68px;
+ }
+ .server-heading h2{
+    font-size: 36px;
+    color: #191919;
+ }
+ .server-heading span{
+    font-size: 25px;
+    color: #eb3741;
+ }
+ .server-box{
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 44px;
+    margin-bottom: 56px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+ }
+ .server-box:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid #fff;
+    background-color: #fff;
+ }
+ .server-box .serv-icon{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+ }
+ .sprite {
+    background-image: url(../images/serverspec.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bookmark {
+    width: 60px;
+    height: 60px;
+    background-position: -6px -6px;
+}
+
+.sprite-follow {
+    width: 64px;
+    height: 64px;
+    background-position: -78px -6px;
+}
+
+.sprite-map {
+    width: 56px;
+    height: 56px;
+    background-position: -154px -6px;
+}
+
+.sprite-price {
+    width: 57px;
+    height: 57px;
+    background-position: -222px -6px;
+}
+
+.sprite-rocket {
+    width: 58px;
+    height: 58px;
+    background-position: -291px -6px;
+}
+
+.sprite-support {
+    width: 52px;
+    height: 59px;
+    background-position: -361px -6px;
+}
+.server-box span{
+    display: block;
+    font-size: 21px;
+    color: #434343;
+    line-height: 28px;
+    font-family: "JF Flat Regular";
+}
+.server-box p{
+    margin-top: 20px;
+    font-size: 13px;
+    color: #929292;
+    font-family: 'Droid Arabic Naskh';
+    line-height: 28px;
+}
+/*------------------------
+        Plans       
+ ------------------------*/
+ .plans{
+    background-image: url(../images/plansbg.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 45px;
+ }
+ .plans-heading{
+  margin-top: 90px;
+  margin-bottom: 88px;
+ }
+ .plans-heading h2 , .plans-heading span{
+    font-family: "JF Flat Regular";
+    display: block;
+    margin-right: 68px;
+ }
+ .plans-heading h2{
+    color: #fff;
+    font-size: 36px;
+    line-height: 36px;
+ }
+ .plans-heading span{
+    color: #c7c7c7;
+    font-size: 25px;
+ }
+ .btncircle3{
+    background-color: #ffb300;
+ }
+ .btncircle3 i{
+     color: #fff;
+     font-size: 34px;
+     top: 19%;
+     right: 19%;
+     position: absolute;
+ }
+ .plans-box{
+   background-color: #fff;
+   border-radius: 10px;
+   width: 500px;
+   margin: 0 auto;
+   margin-bottom: 65px;
+   padding: 30px 0;
+   font-family: "JF Flat Regular";
+ }
+.priceswrap{
+    text-align: center;
+}
+.priceswrap p{
+  color: #424242;
+  font-size: 22px;
+  line-height: 46px;
+  margin-bottom: 36px;
+}
+.priceswrap p span{
+  color: #f03e49;
+  font-size: 45px;
+  line-height: 46px;
+}
+.plan-list{
+  width: 100%;
+  display: block;
+  padding: 0 30px;
+}
+.plan-list li{
+  display: block;
+  background-color: #ededed;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 17px;
+  font-size: 15px;
+  line-height: 38px;
+  padding: 0 40px;
+}
+.spleft , .spright{
+  display: inline-block;
+  width: 50%;
+}
+.buybtn{
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 35px;
+  margin-top: 49px;
+  margin-bottom: 3px;
+}
+.buybtn a{
+  font-size: 18px;
+  color: #66c073;
+  border: 2px solid #66c073;
+  border-radius: 30px;
+  display: block;
+  padding: 12px 35px;
+}
+.buybtn a i{
+  color: #66c073;
+    margin-left: 13px;
+}
+.buybtn:hover a{
+  text-decoration: none;
+  background-color: #66c073;
+  color: #fff;
+
+}
+.buybtn:hover a i{
+  color: #fff;
+}
+.listgreen{
+  color: #18a02c;
+}
+.listred{
+  color: #e0435a;
+}
+/*------------------------
+        clients       
+ ------------------------*/
+.server-clients .serverclients-heading{
+  text-align: center;
+  margin-top: 74px;
+}
+.server-clients .serverclients-heading .linear{
+  font-size: 23px;
+  font-family: "JF Flat Regular";
+  color: #545454;
+  margin-bottom: 58px;
+}
+.server-clients .serverclients-heading .linear:before{
+  content: "ــــــــــــ";
+  margin-left: 20px;
+  color: #7b7ab7;
+}
+.server-clients .serverclients-heading .linear:after{
+  content: "ــــــــــــ";
+  margin-right: 20px;
+  color: #7b7ab7;
+}
+/*------------------------
+        order server       
+ ------------------------*/
+.orderserver{
+  background-color: #7b7ab7;
+  padding: 60px 0 50px 0;
+}
+.order-text{
+  font-family: "JF Flat Regular";
+  font-size: 36px;
+  color: #fff;
+  padding: 80px 0 55px 0;
+  width: 483px;
+}
+.orderbtn{
+  border: 1px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "JF Flat Regular";
+  font-size: 23px;
+  display: inline-block;
+}
+.orderbtn i{
+  margin-left: 10px;
+}
+.orderbtn:hover{
+  text-decoration: none;
+  background-color: #fff;
+  color: #7b7ab7;
+}
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#clients_carousel{position: relative;}
+#clients_carousel .owl-custom-next,#clients_carousel .owl-custom-prev{position: absolute;top:67%;font-size: 16px;color: #727272;}
+#clients_carousel .owl-custom-next{left: -27px;}
+#clients_carousel .owl-custom-prev{right: -23px;}
+
+/*ASA START #1AA568*/
+.plan-head{
+    font-size: 16px !important;
+    width: 103.2%;
+    position: relative;
+    background: #1AA568;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em; /* Adjust to suit */
+    margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.plan-head:before, .plan-head:after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+}
+.plan-head:before {
+    left: -2em;
+    bottom: -1em;
+    border: 1.5em solid #048F52;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+.plan-head:after {
+    right: -1.5em;
+    top: 0;
+    border: 1.5em solid #1AA568;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+.plan-head h3:before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #017442 transparent transparent transparent;
+    bottom: -1em;
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+.plan-head-container { position: relative; z-index: 1; }
+/*ASA END*/

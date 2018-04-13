@@ -1,0 +1,427 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@font-face {
+    font-family: "JF Flat Regular";
+    src: url('../fonts/JF-Flat-regular.eot');
+    src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+    url('../fonts/JF-Flat-regular.woff') format('woff'),
+    url('../fonts/JF-Flat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------------
+        Bootstrap Hack       
+ ------------------------*/
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: right;
+}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: right;
+  }
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: right;
+  }
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: right;
+  }
+  .col-md-offset-12 {
+    margin-right: 100%;
+  }
+  .col-md-offset-11 {
+    margin-right: 91.66666667%;
+  }
+  .col-md-offset-10 {
+    margin-right: 83.33333333%;
+  }
+  .col-md-offset-9 {
+    margin-right: 75%;
+  }
+  .col-md-offset-8 {
+    margin-right: 66.66666667%;
+  }
+  .col-md-offset-7 {
+    margin-right: 58.33333333%;
+  }
+  .col-md-offset-6 {
+    margin-right: 50%;
+  }
+  .col-md-offset-5 {
+    margin-right: 41.66666667%;
+  }
+  .col-md-offset-4 {
+    margin-right: 33.33333333%;
+  }
+  .col-md-offset-3 {
+    margin-right: 25%;
+  }
+  .col-md-offset-2 {
+    margin-right: 16.66666667%;
+  }
+  .col-md-offset-1 {
+    margin-right: 8.33333333%;
+  }
+  .col-md-offset-0 {
+    margin-right: 0;
+  }
+   .row-centered {
+    text-align:center;
+}
+  .col-centered {
+      display:inline-block;
+      float:none;
+      /* reset the text-align */
+      text-align:right;
+      /* inline-block space fix */
+      margin-right:-4px;
+  }
+/*------------------------
+		Big Banner       
+ ------------------------*/
+ .bigbanner{
+ 	position: relative;
+ 	width: 100%;
+ 	background-image: url(../images/bigbanner.jpg);
+ 	background-repeat: no-repeat;
+    background-position: top right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+ }
+ .bannercontentwrap{
+    display: table;
+    width: 510px;
+    height: 605px;
+    margin: 0 auto;
+    text-align: center;
+ }
+ .content-middle{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+ }
+ .content-middle h1, .content-middle span{
+   font-family: "JF Flat Regular";
+   color: #fff;
+   line-height: auto;
+ }
+ .content-middle h1{
+    font-size: 47px;
+   display: block;
+   margin-bottom: 15px;
+ }
+ .content-middle span{
+    font-size: 33px;
+   display: block;
+   margin-bottom: 63px;
+ }
+  .btncircle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    position: relative;
+ }
+.btncircle1{
+    background-color: #fff;
+    margin: 0 auto;
+    width: 54px;
+    height: 54px;
+    border:1px solid #fff;
+}
+.btncircle1:hover{
+  background-color: #2f949c;
+  border-color: #fff;
+}
+.btncircle1:hover i{
+  color: #fff;
+}
+ .btncircle1 i{
+    position: absolute;
+    top: 39%;
+    right: 39%;
+    color: #595959;
+ }
+
+ /*------------------------
+        Server specifications       
+ ------------------------*/
+ .serverspec{
+  padding-top: 87px;
+ }
+ .server-heading{
+    margin-bottom: 100px;
+    text-align: center;
+ }
+ .server-heading h2 {
+    font-family: "JF Flat Regular";
+    display: block;
+    font-size: 36px;
+    color: #3d3d3d;
+    position: relative;
+    padding-bottom: 25px;
+ }
+  .server-heading h2:after{
+  position: absolute;
+  display: block;
+  content: "ـــــــــ";
+  color: #7b7ab7;
+  bottom: 0;
+  right: 47%;
+ }
+ .server-box{
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 44px;
+    margin-bottom: 56px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+ }
+ .server-box:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid #fff;
+    background-color: #fff;
+ }
+ .server-box .serv-icon{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+ }
+ .sprite {
+    background-image: url(../images/serverspec.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bookmark {
+    width: 60px;
+    height: 60px;
+    background-position: -6px -6px;
+}
+
+.sprite-follow {
+    width: 64px;
+    height: 64px;
+    background-position: -78px -6px;
+}
+
+.sprite-map {
+    width: 56px;
+    height: 56px;
+    background-position: -154px -6px;
+}
+
+.sprite-price {
+    width: 57px;
+    height: 57px;
+    background-position: -222px -6px;
+}
+
+.sprite-rocket {
+    width: 58px;
+    height: 58px;
+    background-position: -291px -6px;
+}
+
+.sprite-support {
+    width: 52px;
+    height: 59px;
+    background-position: -361px -6px;
+}
+.server-box span{
+    display: block;
+    font-size: 21px;
+    color: #434343;
+    line-height: 28px;
+    font-family: "JF Flat Regular";
+}
+.server-box p{
+    margin-top: 20px;
+    font-size: 13px;
+    color: #929292;
+    font-family: 'Droid Arabic Naskh';
+    line-height: 28px;
+}
+/*------------------------
+        available games       
+ ------------------------*/
+ .available-games{
+  position: relative;
+  background-image: url(../images/gamesserversbg.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding: 78px 0 67px 0;
+ }
+ .av-head{
+  text-align: center;
+ }
+ .av-head h2{
+  position: relative;
+  font-family: "JF Flat Regular";
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 80px;
+ }
+
+ .game-box{
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+ }
+ .game-logo{
+  position: relative;
+  width: 74%;
+  margin: 0 auto;
+  text-align: center;
+  height: 92px;
+  margin-bottom: 25px;
+ }
+ .game-info{
+  position: relative;
+  width: 74%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+ }
+ .game-info span{
+  display: inline-block;
+  width: 50%;
+  font-family: "JF Flat Regular";
+  font-size: 18px;
+  color: #3c3c3c;
+ }
+ .gbtn{
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 13px;
+  font-family: 'Droid Arabic Kufi';
+  border: 1px solid #000;
+  padding: 10px 23px;
+ }
+ .gbtn:hover{
+   text-decoration: none;
+ }
+.redcolor{
+  color: #f04e4d;
+  border-color: #f04e4d;
+}
+.redcolor:hover{
+  background-color: #f04e4d;
+  border-color: #f04e4d;
+  color: #fff;
+}
+.bluecolor{
+  color: #2f949c;
+  border-color: #2f949c;
+}
+.bluecolor:hover{
+  background-color: #2f949c;
+  border-color: #2f949c;
+  color: #fff;
+}
+.greencolor{
+  color: #85c181;
+  border-color: #85c181;
+}
+.greencolor:hover{
+  background-color: #85c181;
+  border-color: #85c181;
+  color: #fff;
+}
+.greycolor{
+  color: #4f4f4f;
+  border-color: #4f4f4f;
+}
+.greycolor:hover{
+  background-color: #4f4f4f;
+  border-color: #4f4f4f;
+  color: #fff;
+}
+.manwrapper{
+  background-image: url(../images/man.png);
+  position: absolute;
+  left: 0;
+  top: 115px;
+  width: 403px;
+  height: 655px;
+}
+.solderwrapper{
+  background-image: url(../images/soilder.png);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 440px;
+  height: 443px;
+}
+.planewrapper{
+  background-image: url(../images/plane.png);
+  position: absolute;
+  right: 174px;
+  top: 0;
+  width:328px;
+  height: 185px;
+}
